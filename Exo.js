@@ -150,9 +150,15 @@
 // }
 // }
 
-// 3. Déclarer et définir 2 variables misteryNumber et myNumber de type number.En utilisant uniquement l'opérateur ternaire, on affiche :
-// const misteryNumber = 1
-// const myNumber  = 1
+// // 3. Déclarer et définir 2 variables misteryNumber et myNumber de type number.En utilisant uniquement l'opérateur ternaire, on affiche :
+// const misteryNumber = 6
+// const myNumber  = 6
 
-// const Numbers =  misteryNumber == myNumber?Congratulations:misteryNumber < myNumber?'+':misteryNumber> myNumber?'-';
+// const Numbers = misteryNumber == myNumber?'Congratulations':misteryNumber < myNumber?'+':'-';
 // console.log(Numbers);
+// 4. Create Function `findLargest()` finds the largest of three numbers
+function findLargest(nbr1,nbr2,nbr3){
+     return Math.max(nbr1,nbr2,nbr3)
+}
+console.log(findLargest(10,40,100))
+// 5.
