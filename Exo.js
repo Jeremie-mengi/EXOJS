@@ -152,13 +152,48 @@
 
 // // 3. Déclarer et définir 2 variables misteryNumber et myNumber de type number.En utilisant uniquement l'opérateur ternaire, on affiche :
 // const misteryNumber = 6
-// const myNumber  = 6
+// // const myNumber  = 30
 
-// const Numbers = misteryNumber == myNumber?'Congratulations':misteryNumber < myNumber?'+':'-';
-// console.log(Numbers);
-// 4. Create Function `findLargest()` finds the largest of three numbers
-function findLargest(nbr1,nbr2,nbr3){
-     return Math.max(nbr1,nbr2,nbr3)
+// // const Numbers = misteryNumber == myNumber?'Congratulations':misteryNumber > myNumber?'+':'-';
+// // console.log(Numbers);
+// // 4. Create Function `findLargest()` finds the largest of three numbers
+// // function findLargest(nbr1,nbr2,nbr3){
+// //      return Math.max(nbr1,nbr2,nbr3)
+// // }
+// // console.log(findLargest(10,40,100))
+// // 5.Create which Check if a triangle is equilateral, scalene, or isosceles Function `findTriangleType()` finds the type of the triangle for given side values
+// function findTriangleType(A,B,C){
+//     const som = A+B+C
+//     const Equi =  (A==B && B==C && C==A);
+//     const iso =  (A==B || B==A || C==A || C==B );
+//     if (Equi){
+//         console.log('TRIANGLE EQUILATERAL')
+//     }
+//     else if (iso){
+//         console.log('TRIANGLE ISOCELE')
+//     }
+//     else{
+//         console.log('TRIANGLE SCALENE')
+//     }
+   
+   
+// }
+// console.log(findTriangleType(40,80,50))
+// 6.
+// 7. 
+function evalNumbers(num1,num2){
+  
+    switch(0){
+        case '+':
+        console.log(num1 + num2)
+        break;
+        case '-':
+        console.log(num1-num2)
+        break;
+       
+        }
+       
 }
-console.log(findLargest(10,40,100))
-// 5.
+console.log(evalNumbers(4,4))
+
+
