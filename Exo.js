@@ -215,57 +215,53 @@
 
 // 9. 
 function findDaysInMonth(mois,annee){
-   const Nbrmois = mois>0 && mois<=12
+   const nbrmois = mois>0 && mois<=12
 
-    if (Nbrmois && mois==1){
-        console.log("31jours");
-    }else if (Nbrmois && mois==2 && (annee%4===0 && annee%100 !==0|| annee%400===0)){
+   if(mois===0 || mois>12){
+    console.log("Mois Invalide");
+   }
+   else if (nbrmois && mois==2 && (annee%4===0 && annee%100 !==0|| annee%400===0)){
         console.log("29jours");
 
     }
-    else if (Nbrmois && mois==2 && (annee%4!==0 && annee%100 === 0|| annee%400!==0)){
+    else if (nbrmois && mois==2 && (annee%4!==0 && annee%100 === 0|| annee%400!==0)){
         console.log("28jours");
 
     }
-    else if (Nbrmois && mois==3){
+    else if (nbrmois && mois==4 || mois==6 ||mois==9 || mois==11){
         console.log("31jours");
 
-    }else if (Nbrmois && mois==4){
+    }else{
         console.log("30jours");
+        
+    }
+    // }else if (Nbrmois && mois==5){
+    //     console.log("31jours");
 
-    }else if (Nbrmois && mois==5){
-        console.log("31jours");
+    // }else if (Nbrmois && mois==6){
+    //     console.log("30jours");
 
-    }else if (Nbrmois && mois==6){
-        console.log("30jours");
+    // }else if (Nbrmois && mois==7){
+    //     console.log("31jours");
 
-    }else if (Nbrmois && mois==7){
-        console.log("31jours");
+    // }else if (Nbrmois && mois==8){
+    //     console.log("31jours");
 
-    }else if (Nbrmois && mois==8){
-        console.log("31jours");
+    // }else if (Nbrmois && mois==9){
+    //     console.log("30jours");
 
-    }else if (Nbrmois && mois==9){
-        console.log("30jours");
+    // }else if (Nbrmois && mois==10){
+    //     console.log("31jours");
 
-    }else if (Nbrmois && mois==10){
-        console.log("31jours");
+    // }else if (Nbrmois && mois==11){
+    //     console.log("30jours");
 
-    }else if (Nbrmois && mois==11){
-        console.log("30jours");
-
-    }else if (Nbrmois && mois==12){
-        console.log("31jours");
+    // }else if (Nbrmois && mois==12){
+    //     console.log("31jours");
 
  
     }
-    else{
-        console.log('Mois invalide');
-
-    }
-}
-
-findDaysInMonth("2","2020");
+findDaysInMonth(13,2023);
 
 
 
