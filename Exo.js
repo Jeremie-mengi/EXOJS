@@ -181,25 +181,93 @@
 // console.log(findTriangleType(40,80,50))
 // 6.
 // 7. 
-function evalNumbers(num1,num2,resultat){
+// function evalNumbers(num1,num2,resultat){
   
-    switch(resultat){
-        case 'add':
-        console.log(num1 + num2)
-        break;
-        case 'subtract':
-        console.log(num1-num2)
-        break; case 'multiply':
-        console.log(num1*num2)
-        break; case 'divide':
-        console.log(num1/num2)
-        break; case 'modulus':
-        console.log(num1%num2)
-        break;
-        default: 
-        console.log('existe pas');
+//     switch(resultat){
+//         case 'add':
+//         console.log(num1 + num2)
+//         break;
+//         case 'subtract':
+//         console.log(num1-num2)
+//         break; case 'multiply':
+//         console.log(num1*num2)
+//         break; case 'divide':
+//         console.log(num1/num2)
+//         break; case 'modulus':
+//         console.log(num1%num2)
+//         break;
+//         default: 
+//         console.log('existe pas');
        
-        }
+//         }
+//     }
+// evalNumbers(20,20,'modulus')
+// 8.
+// function checkLeapYear(annee){
+// if(annee%4===0 && annee%100 !==0|| annee%400===0){
+//     console.log("année bissextile");
+// }
+// else{
+//     console.log("Pas année bissextile ")
+// }
+// }
+// checkLeapYear("2020")
+
+// 9. 
+function findDaysInMonth(mois,annee){
+   const Nbrmois = mois>0 && mois<=12
+
+    if (Nbrmois && mois==1){
+        console.log("31jours");
+    }else if (Nbrmois && mois==2 && (annee%4===0 && annee%100 !==0|| annee%400===0)){
+        console.log("29jours");
+
     }
-evalNumbers(20,20,'add')
+    else if (Nbrmois && mois==2 && (annee%4!==0 && annee%100 === 0|| annee%400!==0)){
+        console.log("28jours");
+
+    }
+    else if (Nbrmois && mois==3){
+        console.log("31jours");
+
+    }else if (Nbrmois && mois==4){
+        console.log("30jours");
+
+    }else if (Nbrmois && mois==5){
+        console.log("31jours");
+
+    }else if (Nbrmois && mois==6){
+        console.log("30jours");
+
+    }else if (Nbrmois && mois==7){
+        console.log("31jours");
+
+    }else if (Nbrmois && mois==8){
+        console.log("31jours");
+
+    }else if (Nbrmois && mois==9){
+        console.log("30jours");
+
+    }else if (Nbrmois && mois==10){
+        console.log("31jours");
+
+    }else if (Nbrmois && mois==11){
+        console.log("30jours");
+
+    }else if (Nbrmois && mois==12){
+        console.log("31jours");
+
+ 
+    }
+    else{
+        console.log('Mois invalide');
+
+    }
+}
+
+findDaysInMonth("2","2020");
+
+
+
+// 3ieme PARTIE 
 
