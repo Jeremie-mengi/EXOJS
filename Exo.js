@@ -181,19 +181,25 @@
 // console.log(findTriangleType(40,80,50))
 // 6.
 // 7. 
-function evalNumbers(num1,num2){
+function evalNumbers(num1,num2,resultat){
   
-    switch(0){
-        case '+':
+    switch(resultat){
+        case 'add':
         console.log(num1 + num2)
         break;
-        case '-':
+        case 'subtract':
         console.log(num1-num2)
+        break; case 'multiply':
+        console.log(num1*num2)
+        break; case 'divide':
+        console.log(num1/num2)
+        break; case 'modulus':
+        console.log(num1%num2)
         break;
+        default: 
+        console.log('existe pas');
        
         }
-       
-}
-console.log(evalNumbers(4,4))
-
+    }
+evalNumbers(20,20,'add')
 
