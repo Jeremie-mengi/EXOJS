@@ -214,56 +214,88 @@
 // checkLeapYear("2020")
 
 // 9. 
-function findDaysInMonth(mois,annee){
-   const nbrmois = mois>0 && mois<=12
+// function findDaysInMonth(mois,annee){
+//    const nbrmois = mois>0 ||  mois<=12
 
-   if(mois===0 || mois>12){
-    console.log("Mois Invalide");
-   }
-   else if (nbrmois && mois==2 && (annee%4===0 && annee%100 !==0|| annee%400===0)){
-        console.log("29jours");
+//    if(mois<=0 || mois>12){
+//     console.log("Mois Invalide");
+//    }
+//    else if (nbrmois && mois==2 && (annee%4===0 && annee%100 !==0|| annee%400===0)){
+//         console.log("29jours");
 
-    }
-    else if (nbrmois && mois==2 && (annee%4!==0 && annee%100 === 0|| annee%400!==0)){
-        console.log("28jours");
+//     }
+//     else if (nbrmois && mois==2 && (annee%4 !==0 && annee%100 === 0|| annee%400!==0)){
+//         console.log("28jours");
 
-    }
-    else if (nbrmois && mois==4 || mois==6 ||mois==9 || mois==11){
-        console.log("31jours");
+//     }
+//     else if (nbrmois && mois==4 || mois==6 ||mois==9 || mois==11){
+//         console.log("30jours");
 
-    }else{
-        console.log("30jours");
+//     }else{
+//         console.log("31jours");
         
-    }
-    // }else if (Nbrmois && mois==5){
-    //     console.log("31jours");
+//     }
+//     // }else if (Nbrmois && mois==5){
+//     //     console.log("31jours");
 
-    // }else if (Nbrmois && mois==6){
-    //     console.log("30jours");
+//     // }else if (Nbrmois && mois==6){
+//     //     console.log("30jours");
 
-    // }else if (Nbrmois && mois==7){
-    //     console.log("31jours");
+//     // }else if (Nbrmois && mois==7){
+//     //     console.log("31jours");
 
-    // }else if (Nbrmois && mois==8){
-    //     console.log("31jours");
+//     // }else if (Nbrmois && mois==8){
+//     //     console.log("31jours");
 
-    // }else if (Nbrmois && mois==9){
-    //     console.log("30jours");
+//     // }else if (Nbrmois && mois==9){
+//     //     console.log("30jours");
 
-    // }else if (Nbrmois && mois==10){
-    //     console.log("31jours");
+//     // }else if (Nbrmois && mois==10){
+//     //     console.log("31jours");
 
-    // }else if (Nbrmois && mois==11){
-    //     console.log("30jours");
+//     // }else if (Nbrmois && mois==11){
+//     //     console.log("30jours");
 
-    // }else if (Nbrmois && mois==12){
-    //     console.log("31jours");
+//     // }else if (Nbrmois && mois==12){
+//     //     console.log("31jours");
 
  
-    }
-findDaysInMonth(13,2023);
+//     }
+// findDaysInMonth(-12,2023);
 
 
 
-// 3ieme PARTIE 
+// // 3ieme PARTIE
+// // 1.
+// function VerTable(VarTable){
+//     if(Array.isArray(VarTable) ){
+//       console.log("Tableau")
+      
+//     }else{
+//         console.log("Pas de Tableau") 
+//     }
+   
+// }
+// VerTable("ggjhkzdk")
 
+
+
+// // 2.
+// function ElmntArrays(n){
+//     if(Array.isArray(n) ){
+//        return (n[0]) ;
+        
+//       }
+// }
+// console.log(ElmntArrays([4,5]))
+// 3.
+
+// function ElmntArrays(n){
+//     if(Array.isArray(n) ){
+//         return n[n.length-1];
+        
+// }
+// }
+// console.log(ElmntArrays([4,5,10,45,32,40]))
+
+// 4.
