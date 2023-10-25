@@ -281,12 +281,14 @@
 
 
 // // 2.
-// function ElmntArrays(n){
-//     if(Array.isArray(n) ){
-//        return (n[0]) ;
-        
-//       }
-// }
+function ElmntArrays(table,n){
+for(let i=0; i<n ; i++){
+    console.log(table[i])
+
+}
+
+}
+ElmntArrays([2,4,5,6],2)
 // console.log(ElmntArrays([4,5]))
 // 3.
 
@@ -298,4 +300,8 @@
 // }
 // console.log(ElmntArrays([4,5,10,45,32,40]))
 
-// 4.
+// // 4.
+
+// myColor = ["Red", "Green", "White", "Black"]
+// console.log(myColor.join(","))
+5.
