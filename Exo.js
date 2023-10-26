@@ -217,7 +217,7 @@
 // function findDaysInMonth(mois,annee){
 //    const nbrmois = mois>0 ||  mois<=12
 
-//    if(mois<=0 || mois>12){
+//    if(!nbrmois){
 //     console.log("Mois Invalide");
 //    }
 //    else if (nbrmois && mois==2 && (annee%4===0 && annee%100 !==0|| annee%400===0)){
@@ -278,18 +278,17 @@
 // }
 // VerTable("ggjhkzdk")
 
+// // // 2.
+// function ElmntArrays(table,n){
+// for(let i=0; i<n ; i++){
+//     console.log(table[i])
 
+// }
 
-// // 2.
-function ElmntArrays(table,n){
-for(let i=0; i<n ; i++){
-    console.log(table[i])
-
-}
-
-}
-ElmntArrays([2,4,5,6],2)
+// }
+// ElmntArrays([2,4,5,6],2)
 // console.log(ElmntArrays([4,5]))
+
 // 3.
 
 // function ElmntArrays(n){
@@ -304,4 +303,38 @@ ElmntArrays([2,4,5,6],2)
 
 // myColor = ["Red", "Green", "White", "Black"]
 // console.log(myColor.join(","))
-5.
+
+// 5.
+// function insertHyphen(str) {
+//     var strArr = str.split('');
+//     var numArr = strArr.map(Number);
+//       for(var i = 0; i < numArr.length; i++) {
+//         if(numArr[i-1]%2===0 && numArr[i]%2===0) {
+//           numArr.splice(i, 0, '-');
+//         }
+//       }
+//     return numArr.join('');
+//   }
+//   console.log(insertHyphen('2244864'));
+// 
+// 6.
+// const arr = [1, 2, 3, 4];
+// const redu = (a, b) => a + b;
+// console.log(arr.reduce(redu))
+
+// const array = [1, 2, 3, 4];
+// let sum = 0;
+
+// for (let i = 0; i < array.length; i++) {
+//   sum += array[i];
+// }
+// console.log(sum);
+
+// 7. 
+var tab = [3, 6, 1, 9, 2]
+tab.sort();
+console.log(tab);
+
+
+
+
