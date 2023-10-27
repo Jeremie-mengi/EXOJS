@@ -331,10 +331,107 @@
 // console.log(sum);
 
 // 7. 
-var tab = [3, 6, 1, 9, 2]
-tab.sort();
-console.log(tab);
+// var tab = [3, 6, 1, 9, 2]
+// tab.sort();
+// console.log(tab);
+// 8.
 
+
+// Troisieme partie Objet 
+
+// 1. 
+
+
+// 2.
+// const mengi = {
+//     nom : "mengi",
+//     Postnom :"Imvwama",
+//     Prenom : "Jeremie",
+// //     Sexe: "M",
+// //     Telephhone : "0813961583",
+// //     color:"red"
+// // }
+// // delete mengi.color;
+// // console.log(mengi);
+// // 3.
+// let entrepot = {
+//         shoe_1  : {
+//         numero : "20",
+//         marque : "Yoji",
+//         provenance : "japon"
+//     }, 
+//         shoe_2 : {
+//         numero : "20",
+//         marque : "adidas",
+//         provenance : "tailland"
+//     }, 
+//         shirt_1 : {
+//         taille : "20",
+//         marque : "Dolce & Gabane",
+//         provenance : "Angletterre"
+//     }, 
+//         shirt_2 : {
+//         taille : "20",
+//         marque : "Gucci",
+//         provenance : "Turquie"
+//     }, 
+// }
+// // // // 4.
+
+// const chat ={
+//     attitude : "fatigue",
+//     sensation : "faim",
+//     etat : "solitude",
+//     augmente : function() {
+//         console.log(this.attitude, this.sensation, this.etat);
+//     },
+//     diminue: function() {
+//         console.log(this.nom, this.prenom);
+//     }
+
+// }
+// for(const ch in chat){
+//     console.log(ch, chat[ch]);
+// }
+
+// // 5.
+// const recipe = {
+//     title : " ",
+//     servings : 0,
+//     ingredients : []
+// }
+// recipe.title = "Mole"
+// recipe.servings = 2 
+// recipe.ingredients = ["cannelle", "cumin", "cacao"]
+// console.log(recipe.title);
+// console.log(recipe.servings);
+// console.log(recipe.ingredients);
+
+// 6.
+const livres = [{
+    title : "",
+    Auteur : "",
+    dejaLu : true
+    },{
+    title : "",
+    auteur : "",
+    dejaLu : true
+        } ]
+        for (let i in livres){
+        livres.title = "The Hobbit by J.R.R.";
+        livres.auteur = "Tolkien"
+
+        if(livres[i].dejaLu){
+            console.log( "Vous avez déjà lu Le Hobbit de J.R.R. Tolkien");
+        }
+        else{
+            console.log("Vous devez encore lire e Seigneur des Anneaux de J.R.R. Tolkien");
+        }
+         
+        }
+        console.log(livres);
+       
+       
 
 
 
