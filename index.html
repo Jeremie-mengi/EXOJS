@@ -6,7 +6,63 @@
     <title>Document</title>
 </head>
 <body>
-    <script src="Exo.js"></script>
-    
+    <!-- <ul>
+
+    </ul> --> 
+<ul>
+    <li class="list">1</li>
+    <li>2</li>
+    <li class= "list">3</li>
+  </ul>
+  <ul>
+    <li class="list">a</li>
+    <li>b</li>
+    <li class="list">c</li>
+  </ul>
+  <ul>
+    <li class="list">👻</li>
+    <li>👽</li>
+    <li class="list">🦁</li>
+  </ul>
+    <script >     
+// const fruitList = ["apple", "banana", "tomato"];
+// //obtenir les elements ul via document....
+// let ulList = document.querySelector('ul');
+// for (let i=0; i<fruitList.length; i++) {
+//     const li = document.createElement("li");
+//     li.innerText = fruitList[i];
+//     ulList.appendChild(li);
+//     }
+
+//obtenir les elements ul via document....
+const elements = document.querySelectorAll('.list');
+for (let i=0; i<= elements.length; i++ ){
+    const first =  elements.children[0]
+    const Last =  elements.children[elements.children.length-1];
+    first.textContent ='First';
+    Last.textContent = 'Last' ; 
+}
+;
+// elements[1].innerText ='Last';
+// elements[2].innerText ='First';
+// elements[3].innerText ='Last';
+// elements[4].innerText ='First';
+// elements[5].innerText ='Last';
+
+
+
+
+
+
+
+
+    // li.innerText =elements.firstchild("premier")
+    // li.innerText =elements.lastchild("Deuxieme");
+    // elements.appendChild(li)
+  
+
+
+
+    </script>
 </body>
 </html>

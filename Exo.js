@@ -263,6 +263,19 @@
 //     }
 // findDaysInMonth(-12,2023);
 
+// Table de multiplication 
+
+// function printMultiplicationTable() {
+//   let mult = [];
+//   for(let j = 1; j<=12; j++ ){
+//     for (let i = 1; i <= 10; i++) {
+//       mult.push( ${j} x ${i} = ${j * i});
+//     }
+//   }
+  
+//   console.log(mult.join("\n"));
+// }
+
 
 
 // // 3ieme PARTIE
@@ -378,21 +391,57 @@
 // }
 // // // // 4.
 
-// const chat ={
-//     attitude : "fatigue",
-//     sensation : "faim",
-//     etat : "solitude",
-//     augmente : function() {
-//         console.log(this.attitude, this.sensation, this.etat);
-//     },
-//     diminue: function() {
-//         console.log(this.nom, this.prenom);
-//     }
+// const cat = {
+//     tiredness : 9,
+//     hunger : 5,
+//     lonliness : 0,
+//     happiness : 0,
 
-// }
-// for(const ch in chat){
-//     console.log(ch, chat[ch]);
-// }
+//     sleep : function(){
+//         this.tiredness -= 1
+//     },
+//     eat : function(){
+//         this.hunger -= 1
+//     },
+//     pet : function(){
+//         this.lonliness += 1
+//     },
+//     handelHappiness : function(){
+//         let counter = 0;
+//         if(this.tiredness === 0){
+//             counter++;
+//         };
+//         if(this.hunger === 0){
+//             counter++;
+//         };
+//         if(this.lonliness > 0 ){
+//             counter++;
+//         };
+//         this.happiness += counter
+
+//     }
+// };
+// cat.sleep();
+// cat.sleep();
+// cat.sleep();
+// cat.sleep();
+// cat.sleep();
+// cat.sleep();
+// cat.sleep();
+// cat.sleep();
+// cat.sleep();
+
+// cat.eat();
+// cat.eat();
+// cat.eat();
+
+// cat.eat();
+// cat.eat();
+// cat.pet();
+// cat.pet();
+// cat.pet();
+// cat.handelHappiness();
+// console.log(cat);
 
 // // 5.
 // const recipe = {
@@ -407,31 +456,133 @@
 // console.log(recipe.servings);
 // console.log(recipe.ingredients);
 
-// 6.
-const livres = [{
-    title : "",
-    Auteur : "",
-    dejaLu : true
-    },{
-    title : "",
-    auteur : "",
-    dejaLu : true
-        } ]
-        for (let i in livres){
-        livres.title = "The Hobbit by J.R.R.";
-        livres.auteur = "Tolkien"
+// // 6.
+// const livres = [{
+//     title : "",
+//     Auteur : "",
+//     dejaLu : true
+//     },{
+//     title : "",
+//     auteur : "",
+//     dejaLu : true
+//         } ]
+//         for (let i in livres){
+//         livres.title = "The Hobbit by J.R.R.";
+//         livres.auteur = "Tolkien"
 
-        if(livres[i].dejaLu){
-            console.log( "Vous avez déjà lu Le Hobbit de J.R.R. Tolkien");
-        }
-        else{
-            console.log("Vous devez encore lire e Seigneur des Anneaux de J.R.R. Tolkien");
-        }
+//         if(livres[i].dejaLu){
+//             console.log( "Vous avez déjà lu Le Hobbit de J.R.R. Tolkien");
+//         }
+//         else{
+//             console.log("Vous devez encore lire e Seigneur des Anneaux de J.R.R. Tolkien");
+//         }
          
-        }
-        console.log(livres);
+//         }
+//         console.log(livres);
+
+
        
-       
+// // 7
+// const food = {
+// name : "fruit",
+// description : "mangue",
+// bulk_price :5,
+// consumer_price :"400", 
+
+// }
+// const print = {
+// unique : function(){
+//     return food.name + ' ' + food.description
+// },
+
+// prixPrint : function(){
+//     if(food['bulk_price'] === 5){
+//         return (( food["bulk_price"] * 15 / 100 ))
+//     }
+//     else{
+// return food["bulk_price"]
+//    }    
+// }
+// }
+// console.log( print.prixPrint());
+
+// // 8.
+// var student = { name : "David Rayy", sclass : "VI", rollno : 12 }
+// console.log(Object.values(student).length)
+
+// 9.
+// const book = {
+//      auteur : "Bill Gates", 
+//      titre : "The Road Ahead", 
+//      etatdelecture : true,
+//      sleep : function(){
+//                 return this.auteur + ' ' + this.titre + ' ' + this.etatdelecture
+//             }
+// }
+// book.sleep();
+// book.sleep();
+// book.sleep();
+
+// console.log(book.sleep());
+
+// 10.
+// const library = [ { auteur : 'Bill Gates', titre : 'The Road Ahead', 
+// ReadingStatus : true }, 
+// { auteur : 'Steve Jobs', titre : 'Walter Isaacson',
+//  ReadingStatus : true },
+//   { auteur : 'Suzanne Collins', 
+//  titre : 'Mockingjay : Le dernier livre de The Hunger Games', 
+// lectureStatus : false }] ;
+// console.log(library[0],library[1],library[2]);
+
+// Partie 5 
+// 1.
+// const ul = document.getElementsByTagName("ul")[0];
+// const fruitList = ["apple", "banana", "tomato"];
+// for (let i = 0; i < fruitList.length; i++) {
+//   const li = document.createElement("li");
+//   li.textContent = fruitList[i];
+//   ul.appendChild(li);
+// }
+// console.log(fruitList);
+
+// const fruitList = ["apple", "banana", "tomato"];
+// //obtenir les elements ul via document....
+// let ulList = document.querySelector('ul');
+// for (let i=0; i<fruitList.length; i++) {
+//     const li = document.createElement("li");
+//     li.innerText = fruitList[i];
+//     ulList.appendChild(li);
+//     }
+// console.log(fruitList);
+// 2.
+const div = document.querySelector(div)
+
+// 3.
+////Change the text in the first and the last list item element 
+//in every unordered list element on this page. Change it to 'first' and 'last'.
+
+const elements = document.querySelectorAll('ul'); //recuperation de la liste //
+for(let i=0;i<elements.length; i++){   //parcourrir le tableau qui a des ul comme indices //
+const ul = elements[i]; //affecter le parcour du tableau dans une variable //
+const firstListItem = ul.children[0]; //affecter les premiers enfants de tous les ul(indices) dans la variable firstListItem//  
+const lastListItem = ul.children[ul.children.length - 1]; //affecter les derniers enfants de tous les ul(indices) dans la variable lastListItem//
+firstListItem.textContent = 'first'; // affecter la valeur 'first' dans la variable firstListItem//
+lastListItem.textContent ='last';   //affecter la valeur 'first' dans la variable firstListItem//
+};
+
+// 4.
+
+const 
+
+
+
+
+// let numbers = [5,2,8,1,7]
+// numbers.sort()
+// let result = numbers[1] + numbers[-2]
+// console.log(result);
+
 
 
 
