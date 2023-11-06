@@ -553,27 +553,120 @@
 //     const li = document.createElement("li");
 //     li.innerText = fruitList[i];
 //     ulList.appendChild(li);
-//     }
-// console.log(fruitList);
-// 2.
-const div = document.querySelector(div)
+// //     }
+// // console.log(fruitList);
+// // 2.
+// // const div = document.querySelector('div');
+// // const img = document.createElement('img');
+// // img.src = "https://crocoder.dev/icon.png"
+// // div.appendChild(img)
+// // console.log();
+// // // 3.
+// // ////Change the text in the first and the last list item element 
+// // //in every unordered list element on this page. Change it to 'first' and 'last'.
 
-// 3.
-////Change the text in the first and the last list item element 
-//in every unordered list element on this page. Change it to 'first' and 'last'.
+// // const elements = document.querySelectorAll('ul'); //recuperation de la liste //
+// // for(let i=0;i<elements.length; i++){   //parcourrir le tableau qui a des ul comme indices //
+// // const ul = elements[i]; //affecter le parcour du tableau dans une variable //
+// // const firstListItem = ul.firstElementChild; //affecter les premiers enfants de tous les ul(indices) dans la variable firstListItem//  
+// // const lastListItem = ul.lastElementChild; //affecter les derniers enfants de tous les ul(indices) dans la variable lastListItem//
+// // firstListItem.textContent = 'first'; // affecter la valeur 'first' dans la variable firstListItem//
+// // lastListItem.textContent ='last';   //affecter la valeur 'first' dans la variable firstListItem//
+// // };
 
-const elements = document.querySelectorAll('ul'); //recuperation de la liste //
-for(let i=0;i<elements.length; i++){   //parcourrir le tableau qui a des ul comme indices //
-const ul = elements[i]; //affecter le parcour du tableau dans une variable //
-const firstListItem = ul.children[0]; //affecter les premiers enfants de tous les ul(indices) dans la variable firstListItem//  
-const lastListItem = ul.children[ul.children.length - 1]; //affecter les derniers enfants de tous les ul(indices) dans la variable lastListItem//
-firstListItem.textContent = 'first'; // affecter la valeur 'first' dans la variable firstListItem//
-lastListItem.textContent ='last';   //affecter la valeur 'first' dans la variable firstListItem//
-};
+// // // 4.
+// // const app = document.querySelector("#list-app");
+// // // Create the necessary elements
+// // const list = document.createElement("ul");
+// // const input = document.createElement("input");
+// // input.setAttribute("type", "text");
+// // const Button = document.createElement("button");
+// //  Button.innerHTML = "Create New";
+// //  //Add Elements in the container
+// // app.appendChild(input);
+// // app.appendChild(Button);
+// // app.appendChild(list);
+// // Add event listeners to the elements
+// // Button.addEventListener("click", function(){
+// //     const newItem = document.createElement("li");
+// //     const inputValue = input.value;
+// //     newItem.innerHTML = inputValue;
+// //     list.appendChild(newItem);
+// //     input.value = "";
+// // });
+// // // 5.
+// // const container= document.querySelector('div');
+// // function isPrimeNbr(nbr){
+// //     if (nbr < 8 && (nbr=== 2 || nbr=== 3 ||nbr === 5 || nbr === 7) ){
+// //         return true
+// //     }
+// //     else if ( nbr > 8 && nbr % 2 !== 0 && !(nbr % 3 === 0 || nbr % 5 === 0 || nbr % 7 === 0)) {
+// //         return true;
+// //     } else {
+// //       return  false;
+// //     }
+// // }
+// // // puis créer une boucle qui ira de 0 à 100
+// // for(let i=0; i<=100; i++){
+// //     const paragraph = document.createElement('p');
+// //     paragraph.innerHTML = i;
+// // if (i%2 === 0 && i !== 2){
+// //     paragraph.style.backgroundColor = 'green';
+// //     }
+// //     else if(isPrimeNbr(i) ) {
+// //         paragraph.style.backgroundColor = 'red';
+// //     } else {
+// //         paragraph.style.backgroundColor = 'yellow';
+// //     }
+// //     container.appendChild(paragraph);
+// // }
+// // 6.
+// const para = document.querySelector("#text");
+// const btn = document.querySelector("#jsstyle");
+// btn.addEventListener("click", function () {
+//     // para.style.font-size ;
+//     // para.style.font-familly;
+//     para.style.color = "red";
+//     para.style.fontSize = "40px";
+//     para.style.fontFamily = "Arial";
 
-// 4.
+// })
+// 7.
+// const Myform  = document.getElementById("form1");
+// // const input2  = document.getElementsByName('lname').value;
+// Myform.addEventListener("submit", function(){
+  
+  
+//   let input1  = document.getElementsByTagName('fname');
+//   let input2  = document.getElementsByTagName('lname');
 
-const 
+
+//   if(!input1.value){
+//     e.preventDefault()
+    
+//   }
+//   if(!input2.value){
+//     e.preventDefault()
+//   }
+ 
+// }) 
+//   console.log(input1);
+
+// // 8
+// function getAttributes(){
+//   const a = document.getElementById("link").href;
+//   alert("Voici la valeur de href de :" + a);
+//   const b = document.getElementById("link").hreflang;
+//   alert("Voici la valeur de hreflang de:" + b)
+//   const c = document.getElementById("link").rel;
+//   alert("Voici la valeur de rel de : "+ c)
+//   const d = document.getElementById("link").target;
+//   alert("Voici la valeur de target de : "+ d)
+//   const e = document.getElementById("link").type;
+//   alert("Voici la valeur de type de : "+ e)
+
+// }
+
 
 
 
