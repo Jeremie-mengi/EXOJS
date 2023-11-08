@@ -653,19 +653,53 @@
 //   console.log(input1);
 
 // // 8
-// function getAttributes(){
-//   const a = document.getElementById("link").href;
-//   alert("Voici la valeur de href de :" + a);
-//   const b = document.getElementById("link").hreflang;
-//   alert("Voici la valeur de hreflang de:" + b)
-//   const c = document.getElementById("link").rel;
-//   alert("Voici la valeur de rel de : "+ c)
-//   const d = document.getElementById("link").target;
-//   alert("Voici la valeur de target de : "+ d)
-//   const e = document.getElementById("link").type;
-//   alert("Voici la valeur de type de : "+ e)
+function getAttributes(){
+  const a = document.getElementById("w3r").href;
+  alert("Voici la valeur de href de :" + a);
+  const b = document.getElementById("w3r").hreflang;
+  alert("Voici la valeur de hreflang de:" + b)
+  const c = document.getElementById("w3r").rel;
+  alert("Voici la valeur de rel de : "+ c)
+  const d = document.getElementById("w3r").target;
+  alert("Voici la valeur de target de : "+ d)
+  const e = document.getElementById("w3r").type;
+  alert("Voici la valeur de type de : "+ e)
 
-// }
+}
+
+
+// 9.
+
+// let inp = document.querySelector("input");
+// inp.addEventListener("click", function () {
+//   const tab = document.getElementById("sampleTable");
+//   const tr = document.createElement("tr")
+//   tab.appendChild(tr)
+//    })
+//   
+
+  // 10.
+  // const inputt = document.querySelector('input')
+  // inputt.addEventListener("click", function() {
+  // const div = document.querySelector("div");
+  // const img1 = document.createElement("img");
+  // img1.src="http://farm4.staticflickr.com/3691/11268502654_f28f05966c_m.jpg";
+  // const img2 = document.createElement("img");
+  // img2.src ="http://farm1.staticflickr.com/33/45336904_1aef569b30_n.jpg";
+  // const img3 = document.createElement("img");
+  // img3.src = "http://farm6.staticflickr.com/5211/5384592886_80a512e2c9.jpg";
+  // div.appendChild(tabImg)
+  // const tabImg = [img1, img2, img3 ]; 
+  // Math.random(tabImg)
+  // console.log(img1);
+ 
+
+ 
+
+ 
+
+
+
 
 
 
